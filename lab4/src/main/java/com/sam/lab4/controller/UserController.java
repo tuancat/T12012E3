@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 @RequestMapping("/user")
 public class UserController {
+
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public String list() {
         return "/user/user-list";
